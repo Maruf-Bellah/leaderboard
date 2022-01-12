@@ -21,7 +21,8 @@ body{
 .nav-logo {
      display: flex;
      align-items: center;
-     padding-right: 80px;
+     padding-right: 70px;
+     cursor: pointer;
 }
 .nav-logo p{
      padding: 10px;
@@ -213,4 +214,41 @@ span#duration{
 }
 /* ------------------------------
      course-end
+------------------------------- */
+/* ------------------------------
+     footer-start
+------------------------------- */
+.main-footer{
+     display: flex;
+     align-items: center;
+     background-color: #341ceb;
+     justify-content: space-around;
+     
+     
+}
+.main-footer p{
+     align-items: center;
+     color: whitesmoke;
+     cursor: pointer;
+     padding: 15px 0px;
+}
+.foooter-logo img{
+     width: 40px;
+     height: 50px;
+     cursor: pointer;
+     margin-left: 90px;
+}
+.footer-icon, .fab{
+     font-size: 40px;
+     color: whitesmoke;
+     cursor: pointer;
+
+}
+.footer-icon{
+     margin-right: 90px;
+}
+
+
+/* ------------------------------
+     footer-end
 ------------------------------- */
