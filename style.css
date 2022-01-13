@@ -58,7 +58,7 @@ body{
 --------------------------------------- */
 header{
      width: 870px;
-     height:680px;
+     min: height 600px;;
      display: flex;
      flex-wrap: wrap;
      margin:0px auto;
@@ -116,6 +116,7 @@ header{
      background-color: #FFFFFF;
      width: 870px;
 
+
 }
 
 #top-blog {
@@ -154,62 +155,61 @@ header{
 /* ------------------------------
      course-start
 ------------------------------- */
-.course{
-     background-color: #FFFFFF;
+#course{
      width: 870px;
-     margin: 0 auto;
-   
+     min-height: 400px;
+     margin: 20px auto 0px auto;
+     background-color: #FFFFFF;
+     
 }
-.course h3{
-     padding: 50px  0px 10px 35px;
+.course-title h3{
+     padding: 25px  0px 0px 35px;
      color:  #562EFF;
      font-size: 22px;
 }
 .main-course{
-     width: 870px;
-     height: 275px;
      display: flex;
      justify-content: space-evenly;
-     background-color: #FFFFFF;
-     line-height: 15px;
+     flex-wrap: wrap;
 }
-.about-course{
-     width: 220px;
-     height: 255px;
-     background-color:#FFFFFF;
+.course-box{
+     width: 250px;
+     height: 300px;
+     margin: 5px;
+     line-height: 18px;
      border-radius: 5px;
      box-shadow: 1px 1.5px 10px rgb(240, 232, 232);
 }
-.about-course img{
+.course-box img{
      width: 210px;
      height: 110px; 
-     padding: 5px 5px;
+     padding: 10px 20px;
      
 }
 
-.about-course h4,small{
-     padding: 0px 10px;
+.course-box h4,small{
+     padding: 0px 20px;
 }
    
-.icon{
+#icon{
 color: #FFC014;
     font-size: 13px;
+     margin-left: 20px;
 }
 .empty, #time{
      color: #c5c5c5;
     font-size: 12px;
 
 }
-span#duration{
+#duration{
      border: none;
-     padding: 0px 5px;
+     padding: 5px 10px;
      border-radius: 15px;
      background-color: #FFE4E8;
      font-size: 12px;
      color: #e45c6c;
      font-weight: 400;
-     padding: 4px 8px;
-     margin: 10px 0px 20px 25px;
+     margin: 10px 0px 20px 20px;
      
 }
 /* ------------------------------
@@ -219,6 +219,7 @@ span#duration{
      footer-start
 ------------------------------- */
 .main-footer{
+     width: 100%;
      display: flex;
      align-items: center;
      background-color: #341ceb;
@@ -252,3 +253,122 @@ span#duration{
 /* ------------------------------
      footer-end
 ------------------------------- */
+@media only screen and (min-width:0px) and (max-width:520px){
+   
+     .main-nav{
+          width: 500px;
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-items: center;
+     
+     }
+     .nav-logo{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+     }
+     .nav-logo img{
+          margin-left: 100px;
+     }
+     .nav-icon{
+          align-items: center;
+     
+     }
+     
+    /* ------------header --------------------------------------------------- */
+   
+    .top-player{
+         width: 100%;
+         display: block;
+         align-items: top;
+    }
+    .players{
+      width: 500px;
+      background-color: rgb(43, 41, 41);
+      color: whitesmoke;
+     }
+     #main-player h3{
+          text-align: center;
+     }
+     .players img{
+          width: 60px;
+          height: 60px;
+          padding-bottom: 7px;
+          display: flex;
+          justify-content: center;
+     }
+     /* -----------------blog----------------------------------------------------- */
+     .main-blog{
+          width: 500px;
+     }
+     .top-blog{
+          display: block;
+     }
+     /* --------------------------dourse---------------------------------------------------------*/
+     #course{
+          width: 500px;
+         
+     }
+     .course-box{
+          width: 400px;
+          height: 330px;
+     }
+     .course-box img{
+          width: 320px;
+          height: 150px; 
+          padding: 10px 40px;  
+     }
+     .course-box h4,small{
+          padding: 0px 40px;
+     }
+     #icon{
+          color: #FFC014;
+           font-size: 13px;
+          margin-left: 40px;
+     }
+     .empty, #time{
+         color: #c5c5c5;
+         font-size: 12px;
+     
+     }
+     #duration{
+          border: none;
+          padding: 5px 10px;
+          border-radius: 15px;
+          background-color: #FFE4E8;
+          font-size: 12px;
+          color: #e45c6c;
+          font-weight: 400;
+          margin: 10px 0px 20px 40px;
+          
+     }
+     /* ---------------------------footer---------------------------------------------- */
+     .main-footer{
+          width: 500px;
+          display: flex;
+          flex-wrap: wrap;
+     }
+     * .main-footer p{
+          color: whitesmoke;
+          padding-right: 60px;
+          cursor: pointer;
+          display: block;
+     }
+     .foooter-logo img{
+          width: 40px;
+          height: 50px;
+          cursor: pointer;
+          display: block;
+   
+     }
+     .footer-icon, .fab{
+          font-size: 40px;
+          color: whitesmoke;
+          cursor: pointer;
+     
+     }
+     .footer-icon{
+          margin-left: 130px;
+     } */
+}
