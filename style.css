@@ -471,7 +471,7 @@ color: #FFC014;
      /* ---------------------------footer---------------------------------------------- */
      .main-footer{
           width: 500px;
-          display: flex;
+          display: flex; 
           flex-wrap: wrap;
      }
      * .main-footer p{
