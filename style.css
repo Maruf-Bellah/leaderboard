@@ -13,6 +13,7 @@ body{
 ----------------------------------- */
 .main-nav{
      display: flex;
+     width: 100%;
      align-items: center;
      justify-content: space-around;
      background-color: #562EFF;
@@ -253,6 +254,10 @@ color: #FFC014;
 /* ------------------------------
      footer-end
 ------------------------------- */
+
+/* -------------------------------------------------------*\
+          Media-quyary Start
+\* --------------------------------------------------------*/
 @media only screen and (min-width:0px) and (max-width:520px){
    
      .main-nav{
@@ -370,5 +375,129 @@ color: #FFC014;
      }
      .footer-icon{
           margin-left: 130px;
-     } */
+     } 
 }
+@media only screen and (min-width:520px) and (max-width:768px){
+   
+     .main-nav{
+          width: 500px;
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-items: center;
+     
+     }
+     .nav-logo{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+     }
+     .nav-logo img{
+          margin-left: 100px;
+     }
+     .nav-icon{
+          align-items: center;
+     
+     }
+     
+    /* ------------header --------------------------------------------------- */
+   
+    .top-player{
+         width: 100%;
+         display: block;
+         align-items: top;
+    }
+    .players{
+      width: 500px;
+      background-color: rgb(43, 41, 41);
+      color: whitesmoke;
+     }
+     #main-player h3{
+          text-align: center;
+     }
+     .players img{
+          width: 60px;
+          height: 60px;
+          padding-bottom: 7px;
+          display: flex;
+          justify-content: center;
+     }
+     /* -----------------blog----------------------------------------------------- */
+     .main-blog{
+          width: 500px;
+     }
+     .top-blog{
+          display: block;
+     }
+     /* --------------------------dourse---------------------------------------------------------*/
+     #course{
+          width: 500px;
+          margin-left: 0px;
+         
+     }
+     .course-box{
+          width: 400px;
+          height: 330px;
+     }
+     .course-box img{
+          width: 320px;
+          height: 150px; 
+          padding: 10px 40px;  
+     }
+     .course-box h4,small{
+          padding: 0px 40px;
+     }
+     #icon{
+          color: #FFC014;
+           font-size: 13px;
+          margin-left: 40px;
+     }
+     .empty, #time{
+         color: #c5c5c5;
+         font-size: 12px;
+     
+     }
+     #duration{
+          border: none;
+          padding: 5px 10px;
+          border-radius: 15px;
+          background-color: #FFE4E8;
+          font-size: 12px;
+          color: #e45c6c;
+          font-weight: 400;
+          margin: 10px 0px 20px 40px;
+          
+     }
+     /* ---------------------------footer---------------------------------------------- */
+     .main-footer{
+          width: 500px;
+          display: flex;
+          flex-wrap: wrap;
+     }
+     * .main-footer p{
+          color: whitesmoke;
+          padding-right: 60px;
+          cursor: pointer;
+          display: block;
+     }
+     .foooter-logo img{
+          width: 40px;
+          height: 50px;
+          cursor: pointer;
+          display: block;
+   
+     }
+     .footer-icon, .fab{
+          font-size: 40px;
+          color: whitesmoke;
+          cursor: pointer;
+     
+     }
+     .footer-icon{
+          margin-left: 130px;
+     } 
+}
+
+/* -------------------------------------------------------*\
+          Media-quyary End
+\* --------------------------------------------------------*/
